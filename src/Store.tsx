@@ -34,10 +34,10 @@ function reducer(state:IState, action:IAction): IState {
     }
 }
 
-export function StoreProvider(props: any): JSX.Element {
+export function StoreProvider({ children }: JSX.ElementChildrenAttribute | any): JSX.Element {
     const [state, dispatch] = useReducer(reducer, initialState);
-    
+
     return <Store.Provider value={{ state, dispatch }}>
-        {props.children}
+        {children}
     </Store.Provider>
 }

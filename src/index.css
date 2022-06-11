@@ -13,7 +13,33 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.episode-layout {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 100vh;
+}
+
+.episode-box {
+  padding: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  border-bottom: 1px solid black;
+  padding: .5 rem;
+  position: sticky;
+  top: 0;
+}
+
+.header-link__item {
+  padding: .5rem;
+  text-decoration: none;
+  border-bottom: .5px solid blue;
+  margin-right: 1rem;
+}
+
+.header-link__item:hover {
+  border-bottom: none;
 }
