@@ -17,3 +17,8 @@
   position: sticky;
   top: 0;
 }
+
+.header-link__item {
+  padding: .5rem;
+  text-decoration: none;
+}

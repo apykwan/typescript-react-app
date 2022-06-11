@@ -26,14 +26,14 @@ export const EpisodeList = (props: Episode): JSX.Element => {
             {episodes.map((episode: IEpisode):JSX.Element => (
                 <div key={episode.id} className="episode-box">
                     {episode.image && <img src={episode.image.medium} alt={`Rick and Mort ${episode.name}`}/>}
-                    <div>{episode.name}</div>
+                    <h4>{episode.name}</h4>
                     <section style={{ display: 'flex', justifyContent: 'space-between' }}>
                         Season: {episode.season} Number: {episode.number}
                         <button 
-                        style={{ marginLeft: '0.5rem' }}
-                        onClick={toggleFavAction.bind(null, episode)}
+                            style={{ marginLeft: '0.5rem' }}
+                            onClick={toggleFavAction.bind(null, episode)}
                         >
-                        {favorites.find((fav: IEpisode) => fav.id === episode.id) ? 'UnFav' : 'Fav'}
+                            {favorites.find((fav: IEpisode) => fav.id === episode.id) ? 'UnFav' : 'Fav'}
                         </button>
                     </section>
                 </div>
