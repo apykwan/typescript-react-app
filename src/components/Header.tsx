@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { Link } from "@reach/router";
 
-import { Store } from './Store';
+import { Store } from '../store/Store';
 
 function Header():JSX.Element {
     const { state } = useContext(Store);

@@ -1,9 +1,9 @@
 import { useContext, lazy, Suspense, Fragment } from 'react';
 import { Redirect } from "@reach/router";
 
-import { Store } from './Store';
+import { Store } from '../store/Store';
 
-const EpisodeList = lazy(() => import('./EpisodeList'));
+const EpisodeList = lazy(() => import('../components/EpisodeList'));
 
 const FavPage = ():JSX.Element => {
     const { state, dispatch } = useContext(Store);

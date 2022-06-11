@@ -7,9 +7,9 @@ import {
     Suspense 
 } from 'react';
 
-import { Store } from './Store';
+import { Store } from '../store/Store';
 
-const EpisodeList = lazy(() => import('./EpisodeList'));
+const EpisodeList = lazy(() => import('../components/EpisodeList'));
 
 const URL = `https://api.tvmaze.com/singlesearch/shows?q=rick-&-morty&embed=episodes`;
 

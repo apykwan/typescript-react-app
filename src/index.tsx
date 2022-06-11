@@ -2,11 +2,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 
-import { StoreProvider } from './Store';
+import { StoreProvider } from './store/Store';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
   <StoreProvider>
     <App />

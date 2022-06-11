@@ -1,7 +1,7 @@
 import { Router, RouteComponentProps } from '@reach/router';
-import Header from './Header'
-import HomePage from './HomePage';
-import FavPage from './FavPage';
+import Header from './components/Header'
+import HomePage from './pages/HomePage';
+import FavPage from './pages/FavPage';
 
 const RouterPage = (props: { pageComponent: JSX.Element } & RouteComponentProps) => props.pageComponent
 

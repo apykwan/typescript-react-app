@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { IEpisode, Episode } from './interfaces';
+import { IEpisode, Episode } from '../interfaces';
 
 export const EpisodeList = (props: Episode): JSX.Element => {
     const { episodes, dispatch, favorites } = props;
